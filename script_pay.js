@@ -45,7 +45,7 @@ var paymentForm = document.getElementById('paymentForm');
 paymentForm.addEventListener('submit', payWithPaystack, false);
 function payWithPaystack() {
   var handler = PaystackPop.setup({
-    key: 'pk_live_31569a191025ecc5e71053b9d47e1f99a909440c', // Replace with your public key
+    key: 'pk_test_01c82c6b67442a1caf3c5898012fd604e1a5e0ba', // Replace with your public key
     email: document.getElementById('email').value,
     amount: document.getElementById('amount').value * 100, // the amount value is multiplied by 100 to convert to the lowest currency unit
     currency: document.getElementById('Currency').value, // Use GHS for Ghana Cedis or USD for US Dollars
