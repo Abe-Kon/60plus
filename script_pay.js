@@ -25,8 +25,8 @@ function payWithPaystack(e) {
           }).then((result) => {
             if (result.isConfirmed) {
               Swal.fire(
-                'Deleted!',
-                'Your file has been deleted.',
+                'Cancelled!',
+                'Your transaction has been cancelled.',
                 'success'
               )
             }
