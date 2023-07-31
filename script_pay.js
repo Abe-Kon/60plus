@@ -32,7 +32,7 @@ function payWithPaystack(e) {
     },
     callback: function(response){
       let message = 'Payment complete! Reference: ' + response.reference;
-
+        alert(message)
     }
   });
 
