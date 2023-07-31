@@ -36,13 +36,11 @@ function payWithPaystack(e) {
     //   let message = 'Payment complete! Reference: ' + response.reference;
     //     alert(message)
     Swal.fire({
-        title: 'Done',
-        text: "Payment is a success!",
         icon: 'success',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes, close!'
+        title: 'Your transaction was successful Id:',
+        text: message ,
+        showConfirmButton: false,
+        timer: 1500
       })
 
     }
