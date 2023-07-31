@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="rstyle.css">
+    
+
+</head>
+
+<body>
+        <div class="login">
+        <form id="login" method="get" action="login.php">
+            <img class="mb-4" src="logo2.png" alt="" width="100" height="50"> <br>
+            <h2>THE SIXTY PLUS FOUNDATION</h2>
+            <p><small id="emailHelp" class="form-text text-muted">Provide your personal details in the fields provided. All fields marked ( * )  are required.</small></p>
+            <hr>
+            <label for="currencies"></label>
+            <select name="currencies" id="currencies" >
+                <option  value="defcurrency">Currency</option>
+            <option  value="GBP">GBP</option>
+            <option  value="GHC">GHC</option>
+            <option  value="USD">USD</option>
+            </select>
+            <input type="number" name="no" id="Number" value="0">
+            <hr>
+            <label class="required" for="Title"><b>Title</b></label><br>
+            <select name="Title" id="Title" >
+            <option  value="nothing"></option>
+            <option  value="GBP">Dr.</option>
+            <option  value="GHC">Mr.</option>
+            <option  value="USD">Mrs.</option>
+            <option  value="GBP">Ms.</option>
+            <option  value="GHC">Rev.</option>
+            <option  value="USD">Sr.</option>
+            <option  value="USD">Prof.</option>
+            </select>
+            <br>
+            <label class="required"><b>First Name</b></label> 
+            <label class="required"><b>Last Name</b></label> 
+            <br>
+            <input type="text" name="Uname" id="Uname" placeholder="First Name"> 
+            <input type="text" name="Uname" id="Uname" placeholder="Last Name"> 
+            <br><br>
+            <label class="required"><b>Email</b></label>
+            <label class="required"><b>Phone Number</b></label>
+            <br><br>
+            <input type="email" name="Uname" id="Uname" placeholder="">
+            <input type="tel" name="Uname" id="Uname" placeholder="">
+            <br><br> 
+            <label  for="Country"><b>Country</b></label>
+            <label><b>Address</b></label>
+            <br><br>
+
+            <select name="Country" id="Country" >
+            <option  value="nothing"></option>
+            <option  value="Ghana">Ghana</option>
+            <option  value="Ireland">Ireland</option>
+            <option  value="USA">USA</option>
+            <option  value="Nigeria">Nigeria</option>
+            <option  value="Uzbekistan">Uzbekistan</option>
+            <option  value="Malawi">Malawi</option>
+            <option  value="Croatia">Croatia</option>
+            </select>
+        
+            <input type="text" name="address" id="Uname" placeholder="">
+            <br><br>  
+            <button type="button" class="btn btn-secondary">Cancel</button>
+            <button type="submit" class="btn btn-primary">Proceed to Payment</button>
+        
+        </form>
+    </div>
+
+
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
