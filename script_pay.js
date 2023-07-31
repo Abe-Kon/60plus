@@ -13,7 +13,7 @@ function payWithPaystack(e) {
     // label: "Optional string that replaces customer email"
     
     onClose: function(){
-        alert
+
         Swal.fire({
             title: 'Are you sure?',
             text: "You won't be able to revert this!",
@@ -33,8 +33,18 @@ function payWithPaystack(e) {
           })
     },
     callback: function(response){
-      let message = 'Payment complete! Reference: ' + response.reference;
-        alert(message)
+    //   let message = 'Payment complete! Reference: ' + response.reference;
+    //     alert(message)
+    Swal.fire({
+        title: 'Done',
+        text: "Payment is a success!",
+        icon: 'success',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, close!'
+      })
+
     }
   });
 
