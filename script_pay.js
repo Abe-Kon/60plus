@@ -52,6 +52,7 @@ function payWithPaystack() {
     ref: ''+Math.floor((Math.random() * 1000000000) + 1), // Replace with a reference you generated
     callback: function(response) {
       //this happens after the payment is completed successfully
+      alert('success!!')
       var reference = response.reference;
       alert('Payment complete! Reference: ' + reference);
       // Make an AJAX call to your server with the reference to verify the transaction
