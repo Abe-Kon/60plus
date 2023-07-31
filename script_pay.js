@@ -1,5 +1,5 @@
 const paymentForm = document.getElementById('paymentForm');
-paymentForm.addEventListener("submit", payWithPaystack, false);
+paymentForm.addEventListener("click", payWithPaystack, false);
 
 function payWithPaystack(e) {
   e.preventDefault();
