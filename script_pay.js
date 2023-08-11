@@ -5,7 +5,7 @@ function payWithPaystack(e) {
   e.preventDefault();
 
   let handler = PaystackPop.setup({
-    key: 'pk_test_35a0d96e9a879dafbafb30c949e88c61043545f5', // Replace with your public key
+    key: 'pk_live_eb0318adfd70781ffd889190e048887392a058c7', // Replace with your public key
     email: document.getElementById("email").value,
     amount: document.getElementById("amount").value * 100,
     currency: 'pesewas', //document.getElementById('Currency').value, // Use GHS for Ghana Cedis or USD for US Dollars
