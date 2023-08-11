@@ -582,7 +582,8 @@
 
 <script>
   function cancel_back(re){
-    if(re=="cbutton"){
+    const xhttp = new XMLHttpRequest(); 
+        xhttp.onload = function() { if(re=="cbutton"){
       Swal.fire({
         title: 'Are you sure?',
         text: "You won't be able to revert this!",
@@ -596,6 +597,9 @@
           location.replace("https://www.the60plusfoundation.com")
         }
       })
+        
+        }
+   
     } 
     
   }</script>
