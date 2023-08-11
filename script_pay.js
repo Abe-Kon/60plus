@@ -1,6 +1,23 @@
 const paymentForm = document.getElementById('paymentForm');
 paymentForm.addEventListener("submit", payWithPaystack, false);
+paymentForm.addEventListener("button", cancel_back, false);
 
+function cancel_back(e){
+  e.preventDefault();
+  Swal.fire({
+    title: 'Are you sure?',
+    text: "You won't be able to revert this!",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Yes, close!'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      location.replace("https://www.the60plusfoundation.com")
+    }
+  })
+}
 function payWithPaystack(e) {
   e.preventDefault();
   console.log(document.getElementById("amount").value*100)
