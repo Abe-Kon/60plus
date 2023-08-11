@@ -3,11 +3,11 @@ paymentForm.addEventListener("submit", payWithPaystack, false);
 
 function payWithPaystack(e) {
   e.preventDefault();
-
+  console.log(document.getElementById("amount").value*100)
   let handler = PaystackPop.setup({
     key: 'test_key', // Replace with your public key
     email: document.getElementById("email").value, 
-    amount: document.getElementById("amount").value * 100,
+    amount: parseFloat(document.getElementById("amount").value * 100),
     currency: "GHS", //document.getElementById('Currency').value, // Use GHS for Ghana Cedis or USD for US Dollars
     ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
     // label: "Optional string that replaces customer email"
